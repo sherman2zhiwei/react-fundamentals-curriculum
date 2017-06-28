@@ -1,7 +1,12 @@
 var React = require('react');
+var MainText = require('./MainText');
 
 function App(props){
-	return <h1>Hello, World</h1>
+	return (
+		<div>
+			<MainText />
+		</div>
+	)
 }
 
 module.exports = App;

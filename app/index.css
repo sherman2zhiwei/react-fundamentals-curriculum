@@ -1,7 +1,18 @@
-body {
+html, body {
 	background: url(images/pattern.svg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+}
+
+#main-text {
+	font-family: "Andale Mono", "Courier New", "Lucida Console", monospace;
+	color: #ffffff;
 }
