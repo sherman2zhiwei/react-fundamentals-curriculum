@@ -7,11 +7,19 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: "bundle.js"
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [new HtmlWebpackPlugin({
+        template: 'app/index.html'
+    })],
     module: {
         loaders: [
-            {test: /\.js$/, exclude: /node_modules/, loader: 'babel_loader'},
-            { test: /\.css$/, loader: "style!css" }
+            {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader', query: {
+                presets: ['env', 'react']
+            }},
+            { test: /\.css$/, loader: ["style-loader", "css-loader"]},
+            {test: /\.svg/, use: {loader: 'svg-url-loader', 
+                                  options: {}
+                                  }
+            }
         ]
     }
 };
