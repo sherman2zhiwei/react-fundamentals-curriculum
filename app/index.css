@@ -36,6 +36,8 @@ h1{
 .text-box{
 	width: 180px;
 	height: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 	padding: 10px 10px;
 	border: none;
 	border-radius: 3px;

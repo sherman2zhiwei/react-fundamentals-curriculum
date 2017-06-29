@@ -8,7 +8,7 @@ function App(props){
 		<div className="main-page">
 			<Navbar/>
 			<MainText/>
-			<SearchLocationForm/>
+			<SearchLocationForm orientation="column"/>
 		</div>
 	)
 }
