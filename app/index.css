@@ -10,12 +10,20 @@ html, body {
 	align-items: center;
 	margin: 0;
 	height: 100%;
+	width: 100%;
 	flex-direction: column;
+}
+
+h1{
+	font-size: 50px;
 }
 
 #main-text {
 	font-family: "Andale Mono", "Courier New", "Lucida Console", monospace;
 	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	margin-top: 200px;
 }
 
 #form {
@@ -26,7 +34,8 @@ html, body {
 }
 
 .text-box{
-	width: 200px;
+	width: 180px;
+	height: 25px;
 	padding: 10px 10px;
 	border: none;
 	border-radius: 3px;
@@ -42,3 +51,32 @@ html, body {
 	cursor: pointer;
 	text-decoration: none;
 }
+
+.navbar{
+	height: 80px;
+	width: 100%;
+	background-color:	#FF6347;
+	display: flex;
+	align-items: center;
+}
+
+#app{
+	height: 100%;
+	width: 100%;
+}
+
+.main-page{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	vertical-align: middle;
+}
+
+.navbar h1{
+	text-align: left;
+	font-family: "Helvetica";
+	color: white;
+	font-size: 40px;
+}
+
+		
