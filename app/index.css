@@ -83,4 +83,22 @@ h1{
 	font-size: 40px;
 }
 
-		
+.weather-list{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 90%;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.weather-item{
+	margin: 20px 20px;
+}
+
+h3 {
+	font-family: "Dosis";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: lighter;
+}
